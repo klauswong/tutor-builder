@@ -1,14 +1,18 @@
 # {{TOPIC}} Learning Curriculum
 > Benchmarked against: {{list all benchmark sources — university programs, certifications, training programs, textbooks}}
 
+## Start the course
+
+{{link to the complete standalone course.html; state approved scope/depth and verified offline formats. All modules are available without chat; chat and individual lesson exports are optional. Describe local progress/draft storage and export limits honestly.}}
+
 ---
 
 ## Assessment Plan
 > Summary of assessment distribution across the curriculum.
 
-| Module | Exercises | Quiz | Exam | Capstone | Mini-Project |
-|--------|-----------|------|------|----------|--------------|
-| {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
+| Module | Exercises | Visual lesson | Flashcards | Quiz | Written test | Exam | Capstone | Mini-Project |
+|--------|-----------|---------------|------------|------|--------------|------|----------|--------------|
+| {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} | {{...}} |
 
 ---
 
@@ -20,6 +24,10 @@
 - [ ] {{Concept}}
 - {{Context connection: how this connects to what the learner already sees/does}}
 - **Exercise ({{Tool}}):** {{description}}
+- **Visual model:** {{relationship to explore; variables, limits, misconception}}
+- **Assets:** {{relative links to generated lessons and question banks; mark unbuilt assets as planned}}
+- **Flashcards:** {{objective-linked recall prompts, if useful}}
+- **Written test:** {{scope, variant rules, rubric, self-assessment or provisional AI marking}}
 - **Exercise (Conceptual):** {{description}}
 
 {{Repeat for additional prerequisite modules: 0.2, 0.3, etc.}}
@@ -36,6 +44,10 @@
 - {{Context connection}}
 - **Exercise ({{Tool}}):** {{description}}
 - **Exercise ({{Tool 2}}):** {{description, if learner uses multiple tools}}
+- **Visual model:** {{relationship to explore; variables, limits, misconception}}
+- **Assets:** {{relative links to generated lessons and question banks; mark unbuilt assets as planned}}
+- **Flashcards:** {{objective-linked recall prompts, if useful}}
+- **Written test:** {{scope, variant rules, rubric, self-assessment or provisional AI marking}}
 - **Exercise (Conceptual):** {{description}}
 {{If quiz: - **Quiz:** {{number}} questions covering {{scope}} — {{format: MCQ / short answer / etc.}}}}
 

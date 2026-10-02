@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "compound-interest",
+  "objectives": [
+    {"id": "o1", "description": "Calculate annual compound growth and compare it with simple interest."},
+    {"id": "o2", "description": "Explain why reinvested interest increases the amount earned each year."}
+  ],
+  "sources": [{"id": "s1", "reference": "Annual compound-interest identity: A = P × (1 + r/100)^t; simple A = P × (1 + r/100 × t).", "assumptions": "Constant annual rate, annual compounding, no deposits, fees, tax or inflation."}],
+  "flashcards": [{"id": "c1", "objectiveId": "o2", "difficulty": "easy", "sourceId": "s1", "prompt": "What balance is compound interest calculated on?", "answer": "The current balance, including interest already earned."}],
+  "quizzes": [{"id": "q1", "objectiveId": "o1", "difficulty": "easy", "sourceId": "s1", "type": "single-choice", "prompt": "At 10% annually, what is $1,000 worth after two years of compounding?", "options": [
+    {"id": "a", "text": "$1,200", "correct": false, "feedback": "This uses simple interest. Year two earns $110 on $1,100."},
+    {"id": "b", "text": "$1,210", "correct": true, "feedback": "$1,000 × 1.1 × 1.1 = $1,210."},
+    {"id": "c", "text": "$1,100", "correct": false, "feedback": "This is the balance after only one year."}
+  ]}],
+  "writtenTests": [{"id": "w1", "objectiveId": "o1", "difficulty": "medium", "sourceId": "s1", "type": "calculation-with-reasoning", "promptTemplate": "Start with ${principal} at {ratePercent}% annually. Calculate the balance after {years} years of annual compounding and show your method.", "variantRules": {"principal": {"min": 1000, "max": 2500, "step": 500}, "ratePercent": {"min": 4, "max": 10, "step": 2}, "years": {"min": 3, "max": 5, "step": 1}, "constraints": ["Rate is constant and annual compounding is explicit.", "No extra deposits or withdrawals."], "answerFormula": "principal * (1 + ratePercent / 100) ** years", "rounding": "Nearest cent", "numericTolerance": 0.01}, "rubric": [
+    {"id": "substitution", "points": 1, "criterion": "Correctly substitutes principal, rate and duration."},
+    {"id": "compounding", "points": 1, "criterion": "Applies compounding for the full duration."},
+    {"id": "result", "points": 1, "criterion": "Correct result rounded to cents."}
+  ], "gradingModes": ["offline-self-assessment", "provisional-chat-review"]}]
+}

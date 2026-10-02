@@ -1,3 +1,6 @@
 .DS_Store
 **/.DS_Store
 .claude/
+
+# Local agent session database
+:memory:.ses
